@@ -42,8 +42,6 @@ h3 {
     #logo {
         width: 400px;
         height: auto;  
-        transition-property: color;
-        transition-duration: 3s;
     }
     .nav_links {
         justify-content: flex-end;
@@ -62,6 +60,7 @@ h3 {
     }
     img {
         width: 300px;
+        margin: 10px;
     }
 }
 @media screen and (prefers-reduced-motion: reduce){
