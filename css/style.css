@@ -12,16 +12,19 @@ header, .nav_links, .pricing, .gallery {
 
 .nav_links {
     align-items: center;
-}
-
-.card {
-    min-width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+.pricing {
+    min-width: 100%;
+}
+
 .gallery {
     min-width: 100%;
+}
+h3 {
+    background-color: #288080;
 }
 
 @media screen and (min-width: 700px) {
@@ -30,24 +33,35 @@ header, .nav_links, .pricing, .gallery {
         flex-direction: row;
     }
     #logo {
-        width: 400px;  
+        width: 400px;
+        height: auto;  
         transition-property: color;
         transition-duration: 3s;
     }
     .nav_links {
-        display: flex;
-        flex-direction: row;
+        justify-content: flex-end;
     }
     .pricing {
         width: 300px;
-        align-content: center;
+        justify-content: center;
     }
     .gallery {
         width: 300px;
+        justify-content: center;
     }
-    @media (prefers-reduced-motion) {
-        #logo {
-            visibility: visible;
-        }
+    .pricing {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
     }
 }
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
