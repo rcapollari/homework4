@@ -27,6 +27,7 @@ h3 {
 }
 #image1, #image2, #image3, #image4, #image5 {
     border: #50C7C7 solid 5px;
+    margin: 10px;
 }
 .card {
     border-top-right-radius: 20px;
@@ -37,18 +38,25 @@ h3 {
     header, .nav_links, .pricing, .gallery {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
     }
+
     #logo {
+        display: flex;
         width: 400px;
-        height: auto;  
+    }
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
     .nav_links {
-        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
     }
 
     .gallery {
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .pricing {
         display: flex;
