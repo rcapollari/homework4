@@ -31,6 +31,7 @@ h3 {
     header, .nav_links, .pricing, .gallery {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     #logo {
         width: 400px;
